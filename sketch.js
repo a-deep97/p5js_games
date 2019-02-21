@@ -2,16 +2,25 @@
 
 
 /////////global variable
-var speed=5;
-var length=1;
-var count=0;
-var food_x;
-var food_y;
-var score=0;
-var game_status=1;
-var blocks_x=new Array(10);
-var blocks_y=new Array(10);
-///////////////////////////
+var speed=5;	// speed of snake
+var length=1;	//lenght of the sanke
+var count=0;	//a counter variable for updating snake at a particular interval
+var food_x;	//x coordinate of random food
+var food_y;	//y coordinate of random food
+var score=0;	//score
+var game_status=1;	// variable to return boolean values fot game over situation
+var blocks_x=new Array(10);	//x coordinate for random allocated blockages
+var blocks_y=new Array(10);	//y coordinate for random allocated blockages
+///////////////////////////////////////////////////////////////////
+
+//---------------SNAKE-----------------//
+
+/*snake is class which represent an indivisual smallest part of
+the snake having same propoerties differ by their position and
+direction. the more the snake grows the more objects of snake are
+linked through an array  of objects*/
+
+/////////////////////////////////////////////////////////////////
 class snake
 {
   constructor(x,y,x_dir,y_dir)
@@ -21,7 +30,8 @@ class snake
     this.x_dir=x_dir;
     this.y_dir=y_dir;
   }
-  show(c,s)
+  //SHOW function print the individual part of the snake//
+  show(c,s)	// s is a local variable for speed,c is local variable for identifying the order of the part for alternate coloring
   {
     this.c=c;
     rectMode(CENTER);
