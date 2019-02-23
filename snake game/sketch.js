@@ -2,7 +2,11 @@
 
 
 <<<<<<< HEAD:snake game/sketch.js
-/////////global variable
+
+
+
+/////////////////////////////////////////////////////
+/////////global variable/////////////////////////////
 var speed=5;
 var length=1;
 var count=0;
