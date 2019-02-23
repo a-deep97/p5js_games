@@ -1,7 +1,7 @@
 
 
 
-/////////global variable
+/////////global variable/////////////////////////////////////////
 var speed=5;	// speed of snake
 var length=1;	//lenght of the sanke
 var count=0;	//a counter variable for updating snake at a particular interval
