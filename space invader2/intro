@@ -1,0 +1,6 @@
+#space invader 2
+
+p5js game .
+controls: right arrow,left arrow,control(fire)
+
+note: update your version of game my your manual modifications.
