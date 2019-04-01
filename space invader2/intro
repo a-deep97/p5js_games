@@ -1,4 +1,4 @@
-#space invader 2
+# space invader 2
 
 p5js game .
 controls: right arrow,left arrow,control(fire)
