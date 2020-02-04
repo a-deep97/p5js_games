@@ -1,2 +1,2 @@
 # p5js_games
-simple snake game made in javascript p5js
+  Web applet games made using javascript library p5.js (processing foundation). 
