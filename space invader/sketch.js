@@ -100,7 +100,10 @@ class blocks
 ///////function setup/////
 function setup() 
 {
-  createCanvas(1200,650);
+  var cnv = createCanvas(1200,650);
+  var x=(windowWidth-width)/2;
+  var y=(windowHeight-height)/2;
+  cnv.position(x,y);
   snake_speed=2;
   dir_x=1;
   dir_y=0;
