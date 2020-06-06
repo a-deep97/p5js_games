@@ -19,7 +19,10 @@ function setup() {
   offset1 = offset2 = 0;//y coordinate variable for side blocks
   circlex = 300; // cirle x
   circley = 200;	//  circle y
-  createCanvas(600*factor, 400*factor);
+  var cnv=createCanvas(600*factor, 400*factor);
+  var x=(windowWidth-width)/2;
+  var y=(windowHeight-height)/2;
+  cnv.position(x,y); 	
 }
 
 function draw() 
