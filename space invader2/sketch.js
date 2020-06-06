@@ -76,7 +76,10 @@ function preload()
 ////////////////////////////////////////////////////////
 function setup()
 {
-  createCanvas(600, 500);
+  var cnv = createCanvas(600,500);
+  var x=(windowWidth-width)/2;
+  var y=(windowHeight-height)/2;
+  cnv.position(x,y);
   background(0);
   back_music.play();
   back_music.loop();
