@@ -54,7 +54,10 @@ var cat;
 function setup() 
 {
   
-  createCanvas(windowWidth, windowHeight);
+  var canvas = createCanvas(500, 500);
+  var x = (windowWidth-width)/2;
+  var y = (windowHeight-height)/2;
+  canvas.position(x,y);	
   cat=loadImage("cat.jpg");
   background(255);
 	for(var i=0;i<16;i++)
