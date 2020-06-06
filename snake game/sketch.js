@@ -1,12 +1,7 @@
 
 
 
-<<<<<<< HEAD:snake game/sketch.js
-
-
-
-/////////////////////////////////////////////////////
-/////////global variable/////////////////////////////
+/////////global variable
 var speed=5;
 var length=1;
 var count=0;
@@ -16,29 +11,7 @@ var score=0;
 var game_status=1;
 var blocks_x=new Array(10);
 var blocks_y=new Array(10);
-///////////////////////////
-=======
-/////////global variable/////////////////////////////////////////
-var speed=5;	// speed of snake
-var length=1;	//lenght of the sanke
-var count=0;	//a counter variable for updating snake at a particular interval
-var food_x;	//x coordinate of random food
-var food_y;	//y coordinate of random food
-var score=0;	//score
-var game_status=1;	// variable to return boolean values fot game over situation
-var blocks_x=new Array(10);	//x coordinate for random allocated blockages
-var blocks_y=new Array(10);	//y coordinate for random allocated blockages
-///////////////////////////////////////////////////////////////////
-
-//---------------SNAKE-----------------//
-
-/*snake is class which represent an indivisual smallest part of
-the snake having same propoerties differ by their position and
-direction. the more the snake grows the more objects of snake are
-linked through an array  of objects*/
-
-/////////////////////////////////////////////////////////////////
->>>>>>> 98ad29ad51b317d3331a7c685679c8c6db6c551e:sketch.js
+//////////////////////////
 class snake
 {
   constructor(x,y,x_dir,y_dir)
@@ -142,7 +115,6 @@ function draw()
     if(j%2!=0)c=255
     tail[j].show(c,speed-1);
   }
-  print(did_collide());
   game_over(is_out());
   game_over(did_collide());
   if(game_status==0)game_over();
