@@ -8,7 +8,7 @@ var blast;
 var explosion;
 var back_music;
 var ship_x,ship_y;
-var xspeed=0.5,yspeed=0.1,dir=4;
+var xspeed=0.8,yspeed=0.1,dir=1;
 var gun;
 var alien_count;
 var score=0,level=1;
@@ -76,10 +76,7 @@ function preload()
 ////////////////////////////////////////////////////////
 function setup()
 {
-  var cnv = createCanvas(600,500);
-  var x=(windowWidth-width)/2;
-  var y=(windowHeight-height)/2;
-  cnv.position(x,y);
+  createCanvas(600, 500);
   background(0);
   back_music.play();
   back_music.loop();
@@ -113,6 +110,7 @@ function keyPressed()
 {
   if(keyCode==SHIFT)
   {
+    back_music.stop();
     back_music.play();
     replay();
   }
@@ -165,12 +163,15 @@ function show_ship()
 ///////////////////////////////////////////////
 function create_aliens()
 {
+  let sign=[1,-1];
+  dir= random(sign);
+  print(dir);
   aliens=[];
   for(var i=0;i<3;i++)
   {
     for(var j=i;j<6-i;j++)
     {
-      var a=new alien(50+50*j,100+50*i,Alien);
+      var a=new alien(100+50*j,100+50*i,Alien);
       aliens.push(a);
     }
   }
@@ -282,25 +283,7 @@ function levelup()
     create_aliens();
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/////////////////////////////////////////////////////
+///////////////////end//////////////////////////////////
 
 
 
