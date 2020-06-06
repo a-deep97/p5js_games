@@ -54,7 +54,7 @@ var cat;
 function setup() 
 {
   
-  createCanvas(500, 550);
+  createCanvas(windowWidth/2, windowHeight/2);
   cat=loadImage("cat.jpg");
   background(255);
 	for(var i=0;i<16;i++)
