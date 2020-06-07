@@ -11,9 +11,8 @@ body{
 }
 .message_by_aman{
 	position: absolute;
-	top: 8px;
-	left:16px;
-	font-size:18px;
+	
+	font-size:50px;
 }
 .btn{
 	border: 1px solid #3498db;
