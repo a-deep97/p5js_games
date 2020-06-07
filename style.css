@@ -12,7 +12,7 @@ body{
 .message_by_aman{
 	position: absolute;
 	top: 8px;
-	right:100px;
+	left:16px;
 	font-size:18px;
 }
 .btn{
