@@ -9,7 +9,12 @@ body{
 	margin-bottom: 5%;
 	
 }
-
+.message_by_aman{
+	position: absolute;
+	bottom: 8px;
+	right:16px;
+	font-size:18px;
+}
 .btn{
 	border: 1px solid #3498db;
 	background: none;
